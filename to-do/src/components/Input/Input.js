@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from './Input.module.css';
 
 const Input = ({addToDo}) => {
     const [toDo, setToDo] = useState('');
@@ -8,8 +9,8 @@ const Input = ({addToDo}) => {
     }
 
     return (
-        <div>
-            <input type="text" value={toDo} onChange={handleChange} ></input>
+        <div className={styles.inputClass}>
+            <input type="text" value={toDo} onChange={handleChange} defaultValue="Enter you To Do task..." ></input>
             <button onClick={() => addToDo(toDo)}>Add</button>
         </div>
 

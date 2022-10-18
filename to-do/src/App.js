@@ -1,4 +1,4 @@
-import './App.css';
+import styles from  './App.module.css';
 import React from 'react';
 import Input from './components/Input/Input';
 import ToDoList from './components/ToDoList/ToDoList';
@@ -23,13 +23,15 @@ function App() {
 
 
   return (
-    <div>
-      <h1>ToDo List</h1>
+    <div className={styles.container}>
+      <div className={styles.toDo}>
+        <h1>ToDo List</h1>
 
-      <Input addToDo={addToDo}/>
+        <Input addToDo={addToDo}/>
 
-      <h3>List of Your ToDo's: </h3>
-      <ToDoList toDoList={toDoList} deleteToDo={deleteToDo} deleteAll={deleteAll}/>
+        <h3>List of Your ToDo's: </h3>
+        <ToDoList toDoList={toDoList} deleteToDo={deleteToDo} deleteAll={deleteAll}/>
+      </div>
     </div>
   );
 }

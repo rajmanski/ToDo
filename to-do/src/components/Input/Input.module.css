@@ -1,0 +1,34 @@
+.inputClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+input {
+    background-color: #F2CC8F;
+    border-color: #F2CC8F;
+    color: #3D405B;
+    border: 1px solid #F2CC8F;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.inputClass button {
+    background-color: #F2CC8F;
+    border-color: #F2CC8F;
+    box-shadow: none;
+    color: #3D405B;
+    border: 1px solid #F2CC8F;
+    border-radius: 12px;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}

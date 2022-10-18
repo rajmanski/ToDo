@@ -10,7 +10,7 @@ const Input = ({addToDo}) => {
     return (
         <div>
             <input type="text" value={toDo} onChange={handleChange} ></input>
-            <button onClick={() => addToDo(toDo)}>Tutaj jest button</button>
+            <button onClick={() => addToDo(toDo)}>Add</button>
         </div>
 
     )

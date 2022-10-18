@@ -17,6 +17,10 @@ function App() {
     setToDoList([...toDoList]);
   }
 
+  const deleteAll = () => {
+    setToDoList([]);
+  }
+
 
   return (
     <div>
@@ -25,7 +29,7 @@ function App() {
       <Input addToDo={addToDo}/>
 
       <h3>List of Your ToDo's: </h3>
-      <ToDoList toDoList={toDoList} deleteToDo={deleteToDo}/>
+      <ToDoList toDoList={toDoList} deleteToDo={deleteToDo} deleteAll={deleteAll}/>
     </div>
   );
 }

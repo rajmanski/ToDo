@@ -1,7 +1,9 @@
+import styles from './ToDoListItem.module.css'
+
 const ToDoListItem = ({item, deleteToDo}) => {
     return (
-        <div>
-            {item}
+        <div className={styles.taskRow}>
+            <span>{item}</span>
             <button onClick={() => deleteToDo()}>Task Done</button>
         </div>
     )

@@ -10,7 +10,7 @@ const Input = ({addToDo}) => {
 
     return (
         <div className={styles.inputClass}>
-            <input type="text" value={toDo} onChange={handleChange} defaultValue="Enter you To Do task..." ></input>
+            <input type="text" value={toDo} onChange={handleChange} defaultValue="Enter you To Do task..."  maxLength="50"></input>
             <button onClick={() => addToDo(toDo)}>Add</button>
         </div>
 

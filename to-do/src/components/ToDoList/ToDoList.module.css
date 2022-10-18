@@ -1,0 +1,17 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.task button {
+    padding: 10px 20px;
+    background-color: #B6D094;
+    border-color: #B6D094;;
+    border-radius: 12px;
+    box-shadow: none;
+    border: 1px solid #B6D094;
+    color: #3D405B;
+    font-weight: bold;
+    font-size: 1rem;
+}

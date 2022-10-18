@@ -1,0 +1,28 @@
+.taskRow {
+    background-color: #F2CC8F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.taskRow button {
+    padding: 10px 20px;
+    background-color: #BE8A60;
+    border-color: #BE8A60;;
+    border-radius: 12px;
+    box-shadow: none;
+    border: 1px solid #BE8A60;
+    color: #3D405B;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.taskRow span {
+    font-size: 1rem;
+    color: #3D405B;
+    font-weight: bold;
+    text-align: center;
+}

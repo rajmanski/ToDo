@@ -8,7 +8,10 @@ const ToDoList = ({toDoList, deleteToDo, deleteAll}) => {
             {toDoList.map((item) => (
                 <ToDoListItem item={item} deleteToDo={deleteToDo} />
             ))}
-            <button onClick={() => deleteAll()}>Click to delte all ToDo's...</button>
+            {toDoList.length > 0 && (
+                <button onClick={() => deleteAll()}>Click to delte all ToDo's...</button>
+            )}
+            
         </div>
     )
 }
